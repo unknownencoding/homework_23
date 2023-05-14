@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+// Задача  1. Користувач іде у відпустку на 56 днів. 
+// Визначити дату на момент його повернення.
+
+    // let date = new Date()
+    // document.write(`${date}<br>`)
+    // date.getDate()
+    // date.setDate(date.getDate()+56)
+    // date.getDate()
+    // document.write(`Задача  1: ${date}`)
+
+
+// Задача 2 . Дано дата виробництва йогурта (вводимо рік, місяць, день)
+//  та кількість днів придатності. 
+// Визначити чи є він придатним на даний момент.
+
+    // let year = parseInt(prompt("Введіть рік виробництва йогурту:"));
+    // let month = parseInt(prompt("Введіть місяць виробництва йогурту:"));
+    // let day = parseInt(prompt("Введіть день виробництва йогурту:"));
+    // let expirationDays = parseInt(prompt("Введіть кількість днів придатності йогурту:"));
+
+
+    // // Створити об'єкт Date з датою виробництва йогурту
+    // let productionDate = new Date(year, month - 1, day);
+    // console.log(`датa виробництва йогурту: ${productionDate}`)
+    // // Обчислити дату закінчення терміну придатності йогурту
+    // let expirationDate = new Date(productionDate.getTime() + expirationDays * 24 * 60 * 60 * 1000);
+
+    // // Отримати поточну дату
+    // let currentDate = new Date();
+    // console.log(`поточнa датa: ${currentDate}`)
+
+    // // Порівняти поточну дату з датою закінчення терміну придатності
+    // if (currentDate.getTime() <= expirationDate.getTime()) {
+    // document.write("Йогурт придатний.");
+    // } else {
+    //     document.write("Йогурт не є придатним.");
+    // }
+
+// Задача 3. Сформувати масив з 1000 елементів від 1 до 800. Порівняти час сортування бульбашкою і  вставкою.
+
+// let arr = []
+// for (let index = 0; index < 1000; index++) {
+//   let randomNum = Math.floor(Math.random()*800)+1
+// arr.push(randomNum)
+// }
+// console.log(arr);
+
+
+
+// // Функція для сортування масиву методом бульбашки
+// function bubbleSort(arr) {
+//   let len = arr.length; // отримати довжину масиву
+//   for (let i = 0; i < len; i++) { // зовнішній цикл, який проходить по масиву
+//     for (let j = 0; j < len - 1; j++) { // внутрішній цикл, який порівнює сусідні елементи
+//       if (arr[j] > arr[j + 1]) { // якщо поточний елемент більший за наступний
+//         // обміняти елементи місцями
+//         let temp = arr[j]; // зберегти поточний елемент у змінній
+//         arr[j] = arr[j + 1]; // замінити поточний елемент на наступний
+//         arr[j + 1] = temp; // замінити наступний елемент на збережений раніше поточний елемент
+//       }
+//     }
+//   }
+//   return arr; // повернути відсортований масив
+// }
+
+// let startBubble = new Date()
+// let bubbleSortArr=bubbleSort(arr)
+// let endBubble = new Date()
+// let milisecondsBubbleCount = endBubble - startBubble
+// console.log(`сортування масиву методом бульбашки виконано за ${milisecondsBubbleCount} мілісекунд`);
+
+
+// console.log(bubbleSortArr);
+
+
+// // Функція для сортування масиву методом вставки
+// function insertionSort(arr) {
+//   let len = arr.length; // отримати довжину масиву
+//   for (let i = 1; i < len; i++) { // зовнішній цикл, який проходить по масиву з другого елемента
+//     let key = arr[i]; // поточний елемент зберігається в змінну "key"
+//     let j = i - 1; // індекс елемента, який знаходиться перед поточним елементом
+//     while (j >= 0 && arr[j] > key) { // поки індекс не менше 0 і елемент більший за поточний елемент
+//       arr[j + 1] = arr[j]; // зсунути елемент вправо
+//       j = j - 1; // перейти до попереднього елемента
+//     }
+//     arr[j + 1] = key; // помістити поточний елемент на правильну позицію
+//   }
+//   return arr; // повернути відсортований масив
+// }
+
+// let startInsertion = new Date()
+// //фіксуємо поточний час перед виконанням коду
+// let insertionSortArr=insertionSort(arr)
+// //викликаємо ф-ю, почалось виконання коду
+// let endInsertion = new Date()
+// //фіксуємо час після звкінчення ф-ї
+// let milisecondsInsertionCount = endInsertion - startInsertion
+// console.log(`сортування масиву методом вставки виконано за ${milisecondsInsertionCount} мілісекунд`);
+
+// console.log(insertionSortArr);
+
+
+// Задача 4. Задаємо користувачу задачу з додавання двох чисел. Визначити скільки секунд було використано для розв’язання задачі.
+
+        // let num1 = Math.floor(Math.random()*100)
+        // let num2 = Math.floor(Math.random()*100)
+        // let startMathematic = new Date
+        // let matematic = prompt(`введіть суму${num1} + ${num2}`)
+        // let endMathematic = new Date
+        // let calcTimeMath = (endMathematic - startMathematic)/1000
+        // console.log(`для розв’язання задачі було використано ${calcTimeMath.toFixed(2)}секунд`);
+        // console.log(startMathematic);
+        // console.log(endMathematic);
+
+// Задача 1. Дано масив рядків. Вивести ті, у яких є цифри (використати метод test та регулярні вирази).
+
+            // let task1Str = ['wewev','ebwerva23','verve','yjmt5ryne','7i7k'];
+
+            // for (let i = 0; i < task1Str.length; i++) {
+            //   let testtask1 = /[\d]/.test(task1Str[i]);
+            //   if(testtask1) {
+            // //     let matchTask1 = task1Str[i].match(/[\d]/g).join(' ');
+            // //     alert(matchTask1);
+            // alert(`${task1Str[i]} => ${task1Str[i].match(/[\d]/g).join(' ')}`)
+            //   }
+            // }
+
+
+// Задача 2. Дано масив рядків. Вивести ті, у яких немає цифр.
+            // let task2Str = ['wewev','ebwerva23','verve','yjmt5ryne','7i7k'];
+            // for (let i = 0; i < task2Str.length; i++) {
+            // let hasDigits = /\d/.test(task2Str[i]);
+            // if (!hasDigits) {
+            //     alert(task2Str[i]);
+            // }
+            // }
+
+            // let task2Str = ['wewev','ebwerva23','verve','yjmt5ryne','7i7k'];
+
+            // for (let i = 0; i < task2Str.length; i++) {
+            //   let testtask2 = /[^\d]/.test(task2Str[i]);
+            //   if(testtask2) {
+            // //     let matchTask1 = task1Str[i].match(/[\d]/g).join(' ');
+            // //     alert(matchTask1);
+            // alert(`${task2Str[i]} => ${task2Str[i].match(/[^\d]/g).join(' ')}`)
+            //   }
+            // }
+// Задача 3. Дано масив рядків. Вивести ті, у яких є голосні літери.
+            // let arrVowels = ['jvbubav', 'fwfw', 'wfvse', 'asvqio'];
+
+            // for (let i = 0; i < arrVowels.length; i++) {
+            // let test1 = /[aouei]/.test(arrVowels[i]); // .test - перевіряє голосниі для кожного рядка окремо
+            // if (test1) {
+            //     console.log(`${arrVowels[i]}`);
+            //   alert(`Vowels in ${arrVowels[i]}: ${arrVowels[i].match(/[aouei]/g).join(', ')}`); // вивід голосних букв для відповідних рядків
+            // //    match() - шукає всі співпадіння підрядка з виразом регулярного виразу у рядку на який викликаний
+            // //  match() - повертає масив співпадінь або null
+            // // join() об'єднує всі елементи масиву в один рядок, розділені заданим роздільником.
+            // }
+            // }
+// Задача 4. Дано масив рядків. Вивести ті, у яких немає голосних літер.     
+            // let arrConsonantLetters = ["hveunvenv","qwrtsdzxcvbn","aekfokvmoerk","rfthcvhbg","trhrbgdf","yuiouyoppghlkaerv"];
+
+            // for (let i = 0; i < arrConsonantLetters.length; i++) {
+            // if (/^[^aouei]+$/.test(arrConsonantLetters[i])) { // перевірка на відсутність голосних букв
+            //     // перший ^ означає початок рядка, + означає один або більше разів, $ - кінець рядка. 
+            //     // [^aouei] - будь-який символ, крім голосних букв
+            //     console.log(arrConsonantLetters[i]);
+            // }
+            // }
+// Задача 5. Дано масив рядків. Вивести ті, у яких є або цифра 1 або цифра 3.
+
+            // let numArr = []
+            // for (let i = 0; i < 20; i++) {
+            //  numArr.push(Math.floor(Math.random()*10))   
+            // }
+            // console.log(numArr);
+            // for (let i = 0; i < numArr.length; i++) {
+            //    if(/^[13]+$/.test(numArr[i])){
+            //      console.log(numArr[i]);
+            //    }
+            // }
+
+// Задача 6. Дано рядок тексту, вивести усі числа, які є у тексті.
+
+            // let task6 = "Міжнародний день праці — свято, що відзначається в 143 країнах 1 травня. Святкування є знаком пам'яті про робітничі протести в Чикаго, які почалися 1 травня 1886 року"
+            // let num = /\b\d+\b/g
+            // let res6 = task6.match(num)
+            // alert(res6)
+// Задача 7. Дано рядок тексту. Знайти усі знаки пунктуації, які були використано.
+                    // let text = `"якийсь довільний текст з розділовими знаками: крапка. кома, знак оклику! питання? і т.д;"`
+                    // let punctuations = text.match(/[\!\?\.\,\-\;\:]+/g);
+                    
+                    // let result = punctuations.join(' '); // об'єднуємо їх у рядок з комами між ними
+                    // alert(result);
+    //variant2
+                    // let punctuationsWariant2 = text.match(/[^\wа-яА-Яіїє]+/g)
+                    // let result2 = punctuationsWariant2.join(' ');
+                    // alert(result2);
+                    
+    //оскільки з кирилицею (/[^\w\s]/g) не працює, то:
+        
+        // let punctuation =`"some arbitrary text with punctuation marks: period. comma, exclamation point! question? etc;"`
+        // let regPunct = punctuation.match(/[^\w\s]/g)
+        // let res = regPunct.join(' ')
+        // alert(res)
+
+// // Задача 8. Дано рядок тексту. Вивести усі складові, які розділені розділовими знаками.
+
+//             let task8 =`JSON is a syntax for serializing objects, arrays, numbers, strings, booleans, and null. It is based upon JavaScript syntax, but is distinct from JavaScript: most of JavaScript is not JSON. For example:
+//             Objects and Arrays
+//             Property names must be double-quoted strings; trailing commas are forbidden.
+//             Numbers
+//             Leading zeros are prohibited. A decimal point must be followed by at least one digit. NaN and Infinity are unsupported.`
+// // оголошуємо змінну з рядком тексту
+
+//             let regPunct8 = task8.match(/[^\wа-яА-Яіїє]+/g)
+//             let res8 = regPunct8.join(' ')
+//             alert(res8)
+// //знаходимо увсі розділові знаки
+
+//             let reg8 = /(\w+)[^\w][\s]+(\w+)/g; // вираз, який шукає два слова, які розділені розділовим знаком
+//             let matches = task8.match(reg8); // шукаю всі входження згідно регулярного виразу у тексті
+//             for (let i = 0; i < matches.length; i++) { // проходимо циклом по знайденим відповідностям
+//               let match = matches[i]; // беремо поточну відповідність
+//               let words = match.split(/[^\w]+/); // розбиваємо її на два слова, використовуючи розділові знаки як роздільник
+//               let before = words[0]; // записуємо перше слово до розділового знаку
+//               let after = words[1]; // записуємо друге слово після розділового знаку
+//               document.write(`${before + " + " + after}<br>`); // виводимо на консоль перше і друге слово, розділені комою
+//             }
+
+// // Задача 9. Дано рядок тексту. Перевірити, чи містить він дату у форматі dd.mm.yyyy (dd- день, mm- місяць, yyyy- рік).
+//                 let stringa = `Головні події 30 квітня: 
+//                 Інавгурація Джорджа Вашингтона, 30.04.1789, 
+//                 Відкриття електрона, 30.04.1897, 
+//                 Самогубство Адольфа Гітлера, 30.04.1945, 
+//                 Закінчення В'єтнамської війни, 30.04.1975`
+//                 let RegularExpressions = /[^dd\mm\yyyy\$]/
+//             console.log(RegularExpressions.test(stringa));
+
+//                 let dateRegExp  = /\b\d{2}\.\d{2}\.\d{4}\b/g
+//                 // \b - границя слова, \d - це цифри, а {2} та {4} кіл-ть симв-в в даті
+//                 let match = stringa.match(dateRegExp );
+//             console.log(match);
+// // Задача 10. Дано рядок тексту. Підрахувати кількість двоцифрових чисел у рядку.
+//             let str2num = "30 квітня.День прикордонника.Професійне свято встановлене Указом Президента України 27 квітня 2018 року № 111. 30 квітня 1918 року було завершено звільнення всієї території України у міжнародно визнаних кордонах."
+//             let doubleNum = /[1-9][1-9/]/g
+//             let matchArr = str2num.match(doubleNum)
+//             console.log(matchArr)//всі 2двоцифві числа
+//             let countDoubleNum;
+//             if (matchArr.length) {
+//                 countDoubleNum=matchArr.length
+//             }
+//             else{
+//                 countDoubleNum=0
+//             }
+//             console.log(countDoubleNum);
+// // Задача 11. Визначити чи може бути рядок тексту номером банківської картки (приклад: «4142-3433-2323-3434»). Знайти усі такі номери.
+//             let task11 = "4142-3433-2323-3434, день/місяць/рік, 8-800505000,tel+380445678900, 5757/8989/0000/8888,dd.mm.yyyy,1234 5678 9000 1233,"
+//             let reg11 = /\d{4}.\d{4}.\d{4}.\d{4}/g
+//             let res11 = task11.match(reg11)
+//             alert(res11)
+// // Задача 12. Дано адресу сайту. Визначити, чи є він урядовим (містить домен “gov”)
+//             let url = prompt('введыть сайт для перевірки')
+//             if (url.toLowerCase().includes('gov')) {
+//                 document.write('Задача 12. сайт є уpядовим')
+//             }
+//             else document.write('Задача 12. сайт НЕ є уpядовим')
+// // Задача 13. Вибрати усі роки після 2021 року з отриманого повідомлення
+//             let strYears = "Календар пасхи за останні 5 років: 28 Квітня 2019 р., 19 Квітня 2020 р., 2 Травня 2021 р., 24 Квітня 2022 р., 16 Квітня 2023 р."
+//             let dateRegYears = /202[2-9]|20[3-9]\d/g;//202[2-9] шукає роки 2022-2029, а 20[3-9]\d шукає роки 2030 і пізніше.
+//             let yearsMore2021 = strYears.match(dateRegYears)
+//             alert(yearsMore2021)
+// // // Задача 14. Дано номер телефону. Перевірити, чи є цей телефон телефоном з України (починаєтсья на «+38»)
+//             let telNum = prompt('введіть номер телефону')
+//                     if(telNum.startsWith("+38")) document.write('введений номер належить Українському оператору')
+//             else document.write('введений номер HE належить Українському оператору')
+// // Задача 15. Користувач вводить прізвище та ім’я в одному рядку через пробіл.  Замінити пробіл на дефіс.
+//             let userName = prompt('enter you first and second name')
+//             userName=userName.replace(' ','-')
+//             alert(userName)
+// // Задача 16. Користувач вводить дату у форматі «день.місяць.рік». Отримати рядкове представлення дати у форматі «день/місяць/рік»
+//             let inputDate = '30.04.2023'
+//             inputDate = inputDate.replaceAll('.','/')
+//             alert(inputDate)
+// // Задача 17. Користувач вводить день (номер дня (0-6) або «sun,mon,tue,wed,thu,fri,sat»). Визначити, чи  є це день вихідним
+//             let today = prompt('please enter num (0-6) or name («sun,mon,tue,wed,thu,fri,sat») of the day')
+//             if (today === "0" || today === "6" || today === "sun" || today === "sat") alert('weekend')
+//             else alert('workDay')
+// //або
+//         let today = prompt('please enter num (0-6) or name («sun,mon,tue,wed,thu,fri,sat») of the day')
+//         let weekend = /^(6|0|sun|sat)$/i;
+//         if (weekend.test(today)) {
+//         alert('Weekend ;))');
+//         } else {
+//         alert('Workday :((');
+//         }
+</script>
+</body>
+</html>
